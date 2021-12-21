@@ -1,0 +1,10 @@
+<%= turbo_frame_tag  'search' do %>
+  <table class="table">
+    <% users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
